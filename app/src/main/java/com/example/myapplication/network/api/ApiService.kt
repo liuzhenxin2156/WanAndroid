@@ -21,8 +21,6 @@ interface ApiService {
     @GET("/banner/json")
     suspend fun getBannerList(): ResponseData<List<Banner>>
 
-
-
     /**
      * 获取首页文章数据，支持分页
      */
