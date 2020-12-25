@@ -9,6 +9,7 @@
         android:id="@+id/aboutFragment"
         android:icon="@drawable/ic_project_24"
         android:title="@string/title_project" />
+
     <item
         android:id="@+id/navigationFragment"
         android:icon="@android:drawable/ic_dialog_map"
@@ -17,5 +18,4 @@
         android:id="@+id/mineFragment"
         android:icon="@drawable/ic_navigation_24"
         android:title="@string/title_mine" />
-
 </menu>
