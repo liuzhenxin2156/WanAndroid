@@ -13,7 +13,7 @@ import kotlinx.android.synthetic.main.fragment_tab_item.*
 
 
 class TabItemFragment :BaseVMFragment() {
-    private var pageNum: Int = 10
+    private var pageNum: Int = 1
     private var cid:Int = 0
     private lateinit var adapter: AboutTabAdapter
     private val mode: ItemTabViewModel by viewModels()

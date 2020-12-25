@@ -10,6 +10,7 @@ import androidx.viewpager2.widget.ViewPager2
 import com.example.myapplication.R
 import com.example.myapplication.adapter.NavItemAdapter
 import com.example.myapplication.adapter.NavigationTabItemSelectedListener
+import com.example.myapplication.ui.search.SearchActivity
 import com.example.myapplication.utils.DensityUtil
 import com.example.myapplication.vm.NavigationViewModel
 import com.google.gson.Gson
@@ -38,10 +39,9 @@ class NavigationFragment : BaseVMFragment() {
     override fun initView() {
         super.initView()
         tabRecycleView.layoutManager = LinearLayoutManager(requireContext());
-
-
-
-
+        search_parent.setOnClickListener {
+            SearchActivity.start(requireContext())
+        }
 
         viewPager2.offscreenPageLimit = ViewPager2.OFFSCREEN_PAGE_LIMIT_DEFAULT
         viewPager2.orientation = ViewPager2.ORIENTATION_VERTICAL
