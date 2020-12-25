@@ -5,10 +5,9 @@ import com.example.myapplication.modle.Articles
 import com.example.myapplication.modle.Banner
 import com.example.myapplication.modle.ProjectTabItem
 import com.pzj.wanandroid_kotlin.network.response.ResponseData
-<<<<<<< HEAD
+
 import com.win.ft_home.model.navigation.NavigationItem
-=======
->>>>>>> ec97037f448ee95da0cfe8a0d070114ba0ab55ee
+
 import retrofit2.http.GET
 import retrofit2.http.Path
 import retrofit2.http.Query
@@ -45,13 +44,11 @@ interface ApiService {
             @Query("cid") cid: Int
     ): ResponseData<AboutTabData>
 
-<<<<<<< HEAD
+
     /**
      * 获取导航数据
      */
     @GET("/navi/json")
     suspend fun getNavigationData(): ResponseData<MutableList<NavigationItem>>
-=======
->>>>>>> ec97037f448ee95da0cfe8a0d070114ba0ab55ee
 }
 
