@@ -15,6 +15,7 @@ class ItemTabViewModel : BaseViewModel<AboutRepository>() {
 
 
     private val aboutTabDataLiveData = MutableLiveData<AboutTabData>()
+
     fun getItemTabLive(): MutableLiveData<AboutTabData> {
         return aboutTabDataLiveData
     }

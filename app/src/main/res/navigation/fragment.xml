@@ -25,6 +25,13 @@
 
     </fragment>
     <fragment
+        android:id="@+id/treeFragment"
+        android:name="com.example.myapplication.ui.fragment.tree.TreeFragment"
+        android:label="fragment_tree"
+        tools:layout="@layout/fragment_tree" >
+
+    </fragment>
+    <fragment
         android:id="@+id/mineFragment"
         android:name="com.example.myapplication.ui.fragment.MineFragment"
         android:label="fragment_mine"

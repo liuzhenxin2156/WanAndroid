@@ -15,7 +15,11 @@
         android:icon="@android:drawable/ic_dialog_map"
         android:title="导航" />
     <item
-        android:id="@+id/mineFragment"
+        android:id="@+id/treeFragment"
         android:icon="@drawable/ic_navigation_24"
+        android:title="@string/title_tree" />
+    <item
+        android:id="@+id/mineFragment"
+        android:icon="@drawable/ic_person_24"
         android:title="@string/title_mine" />
 </menu>

@@ -58,5 +58,17 @@ interface ApiService {
             @Path("page") page: Int,
             @Query("k") key: String
     ): ResponseData<SearchResultModel>
+
+
+    @GET("/tree/json")
+    suspend fun getTreeList(): ResponseData<MutableList<TreeData>>
+
+    @GET(value = "/article/list/{count}/json")
+    suspend fun getTreeDetailList(
+        @Path("count") count: Int,
+        @Query("cid") cid: Int
+    ): ResponseData<TreeDetailModel>
+
+
 }
 

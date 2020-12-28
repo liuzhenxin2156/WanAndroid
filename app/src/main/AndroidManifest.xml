@@ -26,6 +26,10 @@
             android:windowSoftInputMode="stateVisible|adjustPan"
             android:theme="@style/AppTheme"
             />
+        <activity android:name=".ui.treeDetails.TreeDetailsActivity"
+            android:windowSoftInputMode="stateVisible|adjustPan"
+            android:theme="@style/AppTheme"
+            />
     </application>
 
 </manifest>
