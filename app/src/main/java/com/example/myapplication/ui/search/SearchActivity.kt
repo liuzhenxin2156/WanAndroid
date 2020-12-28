@@ -9,6 +9,7 @@ import android.widget.TextView
 import android.widget.Toast
 import androidx.fragment.app.Fragment
 import com.example.myapplication.R
+import com.example.myapplication.ui.search.result.HotKeyFragment
 import com.example.myapplication.ui.search.result.SearchResultFragment
 import com.example.myapplication.utils.KeyBoardUtils
 import com.pzj.wanandroid_kotlin.base.BaseVMActivity
@@ -53,7 +54,6 @@ class SearchActivity :BaseVMActivity() {
                     //隐藏光标和软键盘
                    search.clearFocus()
                     KeyBoardUtils.hideKeyboard(search)
-
                     addFragment(
                         SearchResultFragment.newInstance(getInputData()!!),
                         "SearchResultFragment"

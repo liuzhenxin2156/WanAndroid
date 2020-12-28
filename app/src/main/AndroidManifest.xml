@@ -23,6 +23,7 @@
             />
 
         <activity android:name=".ui.search.SearchActivity"
+            android:windowSoftInputMode="stateVisible|adjustPan"
             android:theme="@style/AppTheme"
             />
     </application>

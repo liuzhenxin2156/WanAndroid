@@ -1,14 +1,12 @@
 package com.pzj.wanandroid_kotlin.network.api
 
-import com.example.myapplication.modle.AboutTabData
-import com.example.myapplication.modle.Articles
-import com.example.myapplication.modle.Banner
-import com.example.myapplication.modle.ProjectTabItem
+import com.example.myapplication.modle.*
 import com.pzj.wanandroid_kotlin.network.response.ResponseData
 
 import com.win.ft_home.model.navigation.NavigationItem
 
 import retrofit2.http.GET
+import retrofit2.http.POST
 import retrofit2.http.Path
 import retrofit2.http.Query
 
@@ -50,5 +48,15 @@ interface ApiService {
      */
     @GET("/navi/json")
     suspend fun getNavigationData(): ResponseData<MutableList<NavigationItem>>
+
+    @GET("/hotkey/json")
+    suspend fun getHotKey(): ResponseData<MutableList<HotKeyModel>>
+
+
+    @POST(" /article/query/{page}/json")
+    suspend fun search(
+            @Path("page") page: Int,
+            @Query("k") key: String
+    ): ResponseData<SearchResultModel>
 }
 
